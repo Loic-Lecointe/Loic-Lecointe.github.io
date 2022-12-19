@@ -260,6 +260,7 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: justify;
 }
 .training .training-content .left .subtitle,
 .training .training-content .right .subtitle{
@@ -279,7 +280,7 @@ section .title::after{
     width: 200px;
     object-fit: cover;
     border: 5px solid #C91313;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .training .training-content .left,
 .training .training-content .right {
@@ -287,7 +288,6 @@ section .title::after{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: justify;
 }
 
 /* skills section styling */
