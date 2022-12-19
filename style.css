@@ -723,7 +723,10 @@ section .title::after{
     .Experiences .Experiences-content .left .text,
     .Experiences .Experiences-content .right .text,
     .training .training-content .left .text{
-        font-size: 18px;
+        font-size: 16px;
+    }
+    .about .about-content .right .p{
+        font-size: 12px;
     }
     .Experiences .left img,
     .Experiences .right img{
