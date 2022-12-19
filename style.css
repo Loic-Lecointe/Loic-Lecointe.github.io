@@ -701,6 +701,13 @@ section .title::after{
     }
     .skills .skills-content .card{
         width: 100%;
+    } 
+    .about .about-content .right .text,
+    .Projet .Projet-content .right .text,
+    .Experiences .Experiences-content .left .text,
+    .Experiences .Experiences-content .right .text,
+    .training .training-content .left .text{
+        font-size: 20px;
     }
 }
 
@@ -716,7 +723,7 @@ section .title::after{
     .Experiences .Experiences-content .left .text,
     .Experiences .Experiences-content .right .text,
     .training .training-content .left .text{
-        font-size: 19px;
+        font-size: 18px;
     }
     .Experiences .left img,
     .Experiences .right img{
@@ -750,3 +757,4 @@ section .title::after{
         line-height: 38px;
     }
 }
+
