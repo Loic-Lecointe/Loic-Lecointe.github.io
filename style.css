@@ -430,6 +430,7 @@ section .title::after{
     border-radius: 50%;
     transition: all 0.3s ease;
 }
+
 .Projets .carousel .card:hover img{
     border-color: #fff;
 }
@@ -481,13 +482,12 @@ section .title::after{
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row i,
-.contact .contact-content .row a i{
+.contact .contact-content .row i{
     font-size: 25px;
     color: #C91313;
+    transition: all 0.3s ease;
 }
-.contact .contact-content .row i:hover,
-.contact .contact-content .row a i:hover{
+.contact .contact-content .row a:hover i{
     font-size: 50px;
     color: #C91313;
 
