@@ -64,7 +64,7 @@ $(document).ready(function(){
                 items: 2,
                 nav: false
             },
-            1000:{
+            1200:{
                 items: 3,
                 nav: false
             }
