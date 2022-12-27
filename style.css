@@ -540,6 +540,15 @@ section .title::after{
 .Projet .Projet-content .right p{
     text-align: justify;
 }
+.Projet .Projet-content .right .lien a{
+    color:#fff;
+    text-decoration: underline;
+}
+.Projet .Projet-content .right .lien a:hover{
+    font-size: 18px;
+    color: #C91313;
+    transition: all 0.3s ease;
+}
 
 
 /* responsive media query start */
