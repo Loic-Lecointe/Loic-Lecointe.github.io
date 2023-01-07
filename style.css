@@ -500,6 +500,10 @@ section .title::after{
 .contact .contact-content .info .sub-title{
     color: #333;
 }
+.contact .contact-content .info .sub-title a{
+    text-decoration:none;
+    color: #333;
+}
 
 /* Projet section styling */
 
