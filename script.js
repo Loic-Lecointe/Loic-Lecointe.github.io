@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed1 = new Typed(".typing-2", {
-        strings: ["etudiant", "en", "informatique"],
+        strings: ["etudiant en informatique"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true,
