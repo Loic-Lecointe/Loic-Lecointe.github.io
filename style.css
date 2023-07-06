@@ -35,15 +35,16 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .Projet, .skills, .Experiences, .Projets, .contact, training{
+.about, .training, .skills, .Experiences, .Projects, .Research, .contact{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.Projet .Projet-content,
+.Projects .Projects-content,
 .skills .skills-content,
 .Experiences .Experiences-content,
 .contact .contact-content,
-.training .training-content{
+.training .training-content,
+.Research .Research-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -291,16 +292,16 @@ section .title::after{
 }
 
 /* skills section styling */
-.skills, .Projets, .about, .Projet{
+.skills, .Projects, .about, .Research{
     color:#fff;
     background: #111;
 }
 .skills .title::before,
-.Projets .title::before{
+.Projects .title::before{
     background: #fff;
 }
 .skills .title::after,
-.Projets .title::after{
+.Projects .title::after{
     background: #111;
     content: "what I can do";
 }
@@ -380,11 +381,11 @@ section .title::after{
     text-align: justify;
 }
 
-/* Projets section styling */
-.Projets .title::after{
+/* Projects section styling */
+.Projects .title::after{
     content: "what I did";
 }
-.Projets .carousel .card{
+.Projects .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -392,7 +393,7 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.Projets .carousel .card a{
+.Projects .carousel .card a{
     display: inline-block;
     background: #111;
     color: #fff;
@@ -404,29 +405,29 @@ section .title::after{
     border: 2px solid #C91313;
     transition: all 0.3s ease;
 }
-.Projets .carousel .card a:hover{
+.Projects .carousel .card a:hover{
     background: none;
     border: 2px solid #fff;
 }
-.Projets .carousel .card:hover{
+.Projects .carousel .card:hover{
     background: #C91313;
 }
-.Projets .carousel .card .box{
+.Projects .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.Projets .carousel .card:hover .box{
+.Projects .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.Projets .carousel .card .text{
+.Projects .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.Projets .carousel .card img{
+.Projects .carousel .card img{
     height: 200px;
     width: 200px;
     object-fit: cover;
@@ -435,7 +436,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
-.Projets .carousel .card:hover img{
+.Projects .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -509,50 +510,50 @@ section .title::after{
     color: #333;
 }
 
-/* Projet section styling */
+/* Research section styling */
 
-.Projet .Projet-content{
+.Research .Research-content{
     margin-bottom: 60px;
 }
-.Projet .Projet-content .left,
-.Projet .Projet-content .left{
+.Research .Research-content .left,
+.Research .Research-content .left{
     width: 45%;
 }
-.Projet .Projet-content .left img,
-.Projet .Projet-content .left2 img{
+.Research .Research-content .left img,
+.Research .Research-content .left2 img{
     height: 300px;
     width: 300px;
     object-fit: cover;
     border-radius: 6px;
 }
-.Projet .Projet-content .right{
+.Research .Research-content .right{
     width: 55%;
 }
-.Projet .Projet-content .right .text{
+.Research .Research-content .right .text{
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-.Projet .Projet-content .right .date{
+.Research .Research-content .right .date{
     margin-bottom: 30px;
 
 }
 
-.Projet .Projet-content .right .lien{
+.Research .Research-content .right .lien{
     margin-top: 30px;
 }
-.Projet .Projet-content .right .text span{
+.Research .Research-content .right .text span{
     color: #C91313;
 }
-.Projet .Projet-content .right p{
+.Research .Research-content .right p{
     text-align: justify;
 }
-.Projet .Projet-content .right .lien a{
+.Research .Research-content .right .lien a{
     color:#fff;
     text-decoration: underline;
 }
-.Projet .Projet-content .right .lien a:hover{
+.Research .Research-content .right .lien a:hover{
     font-size: 18px;
     color: #C91313;
     transition: all 0.3s ease;
@@ -562,8 +563,8 @@ section .title::after{
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img,
-    .Projet .Projet-content .left img,
-    .Projet .Projet-content .left2 img{
+    .Research .Research-content .left img,
+    .Research .Research-content .left2 img{
         height: 350px;
         width: 350px;
     }
@@ -618,23 +619,23 @@ section .title::after{
         max-width: 930px;
     }
     .about .about-content .column,
-    .Projet .Projet-content .column{
+    .Research .Research-content .column{
         width: 100%;
     }
     .about .about-content .left,
-    .Projet .Projet-content .left{
+    .Research .Research-content .left{
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
 
-    .Projet .Projet-content .left2{
+    .Research .Research-content .left2{
         display: flex;
         justify-content: center;
         margin: 60px auto 0;
     }
     .about .about-content .right,
-    .Projet .Projet-content .right{
+    .Research .Research-content .right{
         flex: 100%;
     }
     .skills .skills-content .card{
@@ -666,7 +667,7 @@ section .title::after{
         width: 100%;
     } 
     .about .about-content .right .text,
-    .Projet .Projet-content .right .text,
+    .Research .Research-content .right .text,
     .Experiences .Experiences-content .left .text,
     .Experiences .Experiences-content .right .text,
     .training .training-content .left .text{
@@ -682,7 +683,7 @@ section .title::after{
         font-size: 27px;
     }
     .about .about-content .right .text,
-    .Projet .Projet-content .right .text,
+    .Research .Research-content .right .text,
     .Experiences .Experiences-content .left .text,
     .Experiences .Experiences-content .right .text,
     .training .training-content .left .text{
