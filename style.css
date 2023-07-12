@@ -32,7 +32,7 @@ section{
 }
 .max-width{
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 40px;
     margin: auto;
 }
 .about, .training, .skills, .Experiences, .Projects, .Research, .contact{
@@ -40,7 +40,6 @@ section{
 }
 .about .about-content,
 .training .training-content,
-.Experiences .Experiences-content,
 .Projects .Projects-content,
 .Research .Research-content,
 .contact .contact-content{
@@ -314,14 +313,13 @@ section .title::after{
     content: "what I can do";
 }
 .skills .skills-content .card{
-    width: calc(18% - 20px);
+    width: calc(16.5% - 30px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 25px 12px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-bottom: 25px;
 }
 .skills .skills-content .card:hover{
     background: #C91313;
@@ -347,7 +345,15 @@ section .title::after{
 }
 
 /* Experiences section styling */
-
+.Experiences .Experiences-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.Experiences .Experiences-content .column{
+    margin-bottom: 20px;
+}
 .Experiences .title::after{
     content: "what I tried";
 }
@@ -357,35 +363,23 @@ section .title::after{
     border: 2px solid #222;
     padding: 25px;
 }
-.Experiences .Experiences-content .left .text,
-.Experiences .Experiences-content .right .text{
+.Experiences .Experiences-content .column .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.Experiences .Experiences-content .left .subtitle,
-.Experiences .Experiences-content .right .subtitle{
+.Experiences .Experiences-content .column .subtitle{
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
+    color: #C91313;
 }
-.Experiences .left img,
-.Experiences .right img{
-    height: 150px;
-    width: 400px;
+.Experiences .column img{
+    height: 75px;
+    width: 200px;
     object-fit: cover;
 }
-.Experiences .Experiences-content .left,
-.Experiences .Experiences-content .right{
-    text-align: justify;
-}
-
-.Experiences .Experiences-content .left ul,
-.Experiences .Experiences-content .right ul{
-    margin-top: 10px;
-    margin-left: 4%;
-}
-.Experiences .Experiences-content .p{
+.Experiences .Experiences-content .column{
     text-align: justify;
 }
 
@@ -660,8 +654,12 @@ section .title::after{
     .Research .Research-content .right{
         flex: 100%;
     }
+    .Experiences .Experiences-content .column{
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
+    }
     .skills .skills-content .card{
-        width: calc(36% - 10px);
+        width: calc(50% - 10px);
         margin-bottom: 20px;
     }
     .Experiences .Experiences-content .column,
