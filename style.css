@@ -40,7 +40,6 @@ section{
 }
 .about .about-content,
 .training .training-content,
-.skills .skills-content,
 .Experiences .Experiences-content,
 .Projects .Projects-content,
 .Research .Research-content,
@@ -300,7 +299,12 @@ section .title::after{
 .skills{
     color:#fff;
     background: #111;
-    height: 100vh;
+}
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 .skills .title::before{
     background: #fff;
@@ -310,11 +314,11 @@ section .title::after{
     content: "what I can do";
 }
 .skills .skills-content .card{
-    width: calc(33% - 20px);
+    width: calc(18% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 25px;
+    padding: 25px 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 25px;
@@ -343,9 +347,7 @@ section .title::after{
 }
 
 /* Experiences section styling */
-.Experiences{
-    height: 100vh;
-}
+
 .Experiences .title::after{
     content: "what I tried";
 }
@@ -376,7 +378,6 @@ section .title::after{
 .Experiences .Experiences-content .left,
 .Experiences .Experiences-content .right{
     text-align: justify;
-    margin-bottom: 20px;
 }
 
 .Experiences .Experiences-content .left ul,
@@ -660,7 +661,7 @@ section .title::after{
         flex: 100%;
     }
     .skills .skills-content .card{
-        width: calc(50% - 10px);
+        width: calc(36% - 10px);
         margin-bottom: 20px;
     }
     .Experiences .Experiences-content .column,
