@@ -399,6 +399,7 @@ section .title::after{
 }
 .Projects .carousel .card{
     background: #222;
+    width: calc(100% - 30px);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -423,6 +424,7 @@ section .title::after{
 }
 .Projects .carousel .card:hover{
     background: #C91313;
+    transform: translate(12.5px, 25px);
 }
 .Projects .carousel .card .box{
     display: flex;
