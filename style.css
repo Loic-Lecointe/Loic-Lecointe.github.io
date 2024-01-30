@@ -40,7 +40,6 @@ section{
 }
 .about .about-content,
 .training .training-content,
-.Projects .Projects-content,
 .Research .Research-content,
 .contact .contact-content{
     display: flex;
@@ -358,7 +357,7 @@ section .title::after{
     content: "what I tried";
 }
 .Experiences .Experiences-content .column{
-    width: calc(50% - 30px);
+    width: calc(50% - 50px);
     border-radius: 6px;
     border: 2px solid #222;
     padding: 25px;
@@ -388,7 +387,6 @@ section .title::after{
 .Projects{
     color:#fff;
     background: #111;
-    height: 100vh;
 }
 .Projects .title::before{
     background: #fff;
@@ -399,6 +397,7 @@ section .title::after{
 }
 .Projects .carousel .card{
     background: #222;
+    width: calc(100% - 30px);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -423,7 +422,6 @@ section .title::after{
 }
 .Projects .carousel .card:hover{
     background: #C91313;
-    transform: translate(12.5px, 25px);
 }
 .Projects .carousel .card .box{
     display: flex;
@@ -487,12 +485,10 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.contact .contact-content .left p,
-.contact .contact-content .right p{
+.contact .contact-content .column p{
     text-align: justify;
 }
-.contact .contact-content .left .icons,
-.contact .contact-content .right .icons{
+.contact .contact-content .column .icons{
     margin: 10px 0;
 }
 .contact .contact-content .row{
@@ -503,12 +499,12 @@ section .title::after{
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row i{
+.contact .contact-content .column .row i{
     font-size: 25px;
     color: #C91313;
     transition: all 0.3s ease;
 }
-.contact .contact-content .row a:hover i{
+.contact .contact-content .column .row a:hover i{
     font-size: 50px;
     color: #C91313;
 
