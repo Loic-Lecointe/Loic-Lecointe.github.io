@@ -58,10 +58,11 @@
                 </div>
                 <div class="column right">
                     <div class="text">Je m'appelle Loïc et je suis <span class="typing-2"></span></div>
-                    <p>Actuellement en troisième année de BUT informatique à l’université de Lille à Villeneuve-d'Ascq.
-                        Je suis passionné par l'informatique depuis mes 10 ans grâce à mon oncle qui m'a transmis sa passion.
-                        Pour mes connaissances en langages de programmation, j’ai appris : JAVA, HTML, CSS, SQL, JavaSCript, C# et XAML.
-                        Sur mon temps libre, je pratique la natation, le VTT et j'apprends à jouer de la batterie en autodidacte.
+                    <p>Actuellement en troisième année du Bachelor Universitaire de Technologie (BUT) en informatique à l'Université de Lille à Villeneuve-d'Ascq, 
+                        je suis en alternance au sein de l'entreprise Baron-groupe à Marquise. 
+                        Ma passion pour l'informatique remonte à mes 10 ans, grâce à mon oncle qui m'a transmis sa passion. 
+                        En ce qui concerne mes compétences en langages de programmation, je maîtrise JAVA, HTML, CSS, SQL, JavaScript, C#, et XAML, Python est bien d'autre. 
+                        Pendant mon temps libre, je pratique la natation, le Basket-ball, le VTT, et j'apprends à jouer de la batterie en autodidacte.
                         </p>
                 </div>
             </div>
@@ -124,14 +125,38 @@
                         <div class="text">CSS</div>
                     </div>
                 </div>
+            </div>
+            <div class="skills-content">
                 <div class="card">
                     <div class="box">
                         <i class="fa-brands fa-github"></i>
                         <div class="text">GitHub</div>
                     </div>
                 </div>
-
-                
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-brands fa-react"></i>
+                        <div class="text">React</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-solid fa-database"></i>
+                        <div class="text">NoSQL</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-solid fa-leaf"></i>
+                        <div class="text">Spring Boot</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-brands fa-python"></i>
+                        <div class="text">Python</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -276,4 +301,17 @@
         </div>
     </section>
 </body>
+
+<!-- Popup de compétence -->
+<div class="skill-popup" id="skill-popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeSkillPopup()">&times;</span>
+        <h2 id="skill-title"></h2>
+        <p id="skill-description"></p>
+    </div>
+</div>
+
+<!-- Div de flou pour la page principale -->
+<div class="blur-background" id="blur-background"></div>
+
 </html>
